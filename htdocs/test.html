@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> CJ's Creations - About Me </title>
+	<meta charset="UTF-8">
+	<meta name="author" content="Carlos Jose S. Castillo">
+	<meta name="keywords" content="cj, cjdoesstuff, code, videos, books, comics, games, music">
+	<meta name="revised" content="7/26/2023">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="../images/favicon.ico">
+	
+	<style>
+		#red{
+			position:absolute;
+			background-color:red;
+			width:100%;
+			height:50%;
+			opacity:50%;
+		}
+		
+		#pic{
+			position:absolute;
+			float:left;
+			width:100%;
+			height:100%;
+			z-index:2;
+		}
+		
+		#otherpic{
+			position:relative;
+			float:left;
+			width:100%;
+			height:100%;
+			z-index:-999;
+		}
+		
+		#blue{
+			position:absolute;
+			margin-left:50%;
+			width:50%;
+			height:100%;
+			font-size:5em;
+			z-index:3;
+		}
+		
+		#red:hover{
+			animation-name: darkenfeature;
+			animation-duration: 0.5s;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes darkenfeature {
+			0% {opacity:50%;}
+		  100% {opacity:100%;}
+		}
+		
+		#red:not(:hover){
+			animation-name: lightenfeature;
+			animation-duration: 0.5s;
+			animation-fill-mode: forwards;
+		}
+
+		@keyframes lightenfeature {
+			0% {opacity:100%;}
+		  100% {opacity:50%;}
+		  
+	</style>
+</head>
+
+<body>
+
+<!--
+<div>
+	<a href="">
+		<div id="red">
+			<img src="../images/PLACEHOLDERbanner.png" id="pic">
+			<div id="blue">hello</div>
+		</div>
+	</a>
+</div>
+<img src="../images/PLACEHOLDER.png" id="otherpic">
+-->
+<p id="demo"></p>
+
+<div id="featured">
+	<a href="htdocs/story_of_the_month.html">
+		<div id="news">
+			<img src="images/storyofthemonth.png" id="newspic">
+		</div>
+		<p id="votingend"> VOTING ENDS IN </p>
+		<p id="sotmtimer"></p>
+		<div id="entlabel" class="featpic"> STORY OF THE MONTH (AUG 2023) </div>
+	</a>
+</div>
+
+<script>
+// Set the date we're counting down to
+	var countDownDate = new Date("Jul 30, 2023 23:59:00").getTime();
+
+	// Update the count down every 1 second
+	var x = setInterval(function() {
+
+	  // Get today's date and time
+	  var now = new Date().getTime();
+		
+	  // Find the distance between now and the count down date
+	  var distance = countDownDate - now;
+		
+	  // Time calculations for days, hours, minutes and seconds
+	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		
+	  // Output the result in an element with id="demo"
+	  document.getElementById("demo").innerHTML = days + "d : " + hours + "hr : "
+	  + minutes + "min : " + seconds + "sec";
+		
+	  // If the count down is over, write some text 
+	  if (distance < 0) {
+		clearInterval(x);
+		document.getElementById("demo").innerHTML = "TIME'S UP!";
+	  }
+	}, 1000);
+</script>
+
+</body>
+
+</html>
