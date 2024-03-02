@@ -286,7 +286,7 @@
       height:400px;
   }
   
-  #videos:hover, #stories:hover, #comics:hover, #games:hover, #codingprojects:hover, #music:hover, #otherworks:hover{
+  #videos:hover, #stories:hover, #comics:hover, #games:hover, #codingprojects:hover, #music:hover, #otherworks:hover, .risingphoenixact{
       animation-name: expand;
       animation-duration: 0.5s;
       animation-fill-mode: forwards;
@@ -308,7 +308,7 @@
     100% {transform: scale(1.030,1.030);}
   }
   
-  #videos:not(:hover), #stories:not(:hover), #comics:not(:hover), #games:not(:hover), #codingprojects:not(:hover), #music:not(:hover), #otherworks:not(:hover){
+  #videos:not(:hover), #stories:not(:hover), #comics:not(:hover), #games:not(:hover), #codingprojects:not(:hover), #music:not(:hover), #otherworks:not(:hover), .risingphoenixact:not(:hover){
       animation-name: contract;
       animation-duration: 0.5s;
       animation-fill-mode: forwards;
@@ -646,6 +646,46 @@
     vertical-align:middle;
     font-weight:bold;
     box-shadow:8px 8px 4px black;
+  }
+
+  #risingphoenixlogo{
+    width:100%;
+    height:50%;
+    z-index:800;
+  }
+
+  .risingphoenixact{
+    width:25%;
+    height:45%;
+    float:left;
+    padding-left:2.5%;
+    padding-right:2.5%;
+    padding-bottom:2.5%;
+    box-sizing:border-box;
+  }
+
+  #risingphoenixactsymbol{
+    display:block;
+    height:30%;
+    width:30%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:4%;
+    margin-bottom:4%;
+  }
+
+  .risingphoenixacttitle{
+    font-size:2em;
+    font-weight:bold;
+    padding-bottom:2.5%;
+    text-align:center;
+    color:#ff7f27;
+  }
+
+  .risingphoenixactdesc{
+    font-size:1.2em;
+    text-align:center;
+    color:#ff7f27;
   }
   
   #votebutton:hover{
