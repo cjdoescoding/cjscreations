@@ -697,6 +697,8 @@
     color:#ff7f27;
   }
 
+  #unreleasedact{opacity:0.5 !important;}
+
   #pageselect{
     margin-top:4.5%;
     position:fixed;
