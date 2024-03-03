@@ -1294,14 +1294,14 @@
     }
 
     #firstact{
-      margin-top:40%;
+      margin-top:45%;
     }
     
     #risingphoenixdesc{
       position:absolute;
       width:90%;
       height:50%;
-      font-size:0.85em;
+      font-size:0.95em;
       text-align:center;
       float:none;
       margin-top:2.5%;
@@ -1327,6 +1327,7 @@
       position:fixed;
       width:100%;
       border-bottom:3px solid #ff7f27;
+      background-color:black;
     }
 
     .pagebutton{
@@ -1344,5 +1345,6 @@
     }
 
     #chaptertitle{padding-top:0%; font-size:1.8em;}
+    #chaptertext{margin-top:5%;}
     #disclaimer{font-size:0.75em;}
   }
