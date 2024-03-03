@@ -413,7 +413,7 @@
       font-style:italic;
   }
   
-  ##000000curtain{
+  #blackcurtain{
       z-index:999999999999999;
       position:fixed;
       width:100%;
