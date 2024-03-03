@@ -658,9 +658,25 @@
     box-shadow:8px 8px 4px black;
   }
 
-  #risingphoenixlogo{
-    width:100%;
-    height:40%;
+  #risingphoenixbanner{
+    margin-top:5%;
+    height:10%;
+    width:65%;
+    overflow-x:hidden;
+  }
+
+  #risingphoenixdesc{
+    position:relative;
+    font-size:1.1em;
+    font-family:centurybold;
+    height:30%;
+    width:35%;
+    z-index:40;
+    margin-top:-15%;
+    margin-left:10%;
+    margin-right:1.25%;
+    color:#ff7f27;
+    float:right;
   }
 
   .risingphoenixact{
@@ -684,15 +700,18 @@
   }
 
   .risingphoenixacttitle{
-    font-size:2em;
+    font-size:1.8em;
     font-weight:bold;
+    font-family:centurybold;
     padding-bottom:2.5%;
     text-align:center;
     color:#ff7f27;
+    line-height:1.15em;
   }
 
   .risingphoenixactdesc{
-    font-size:1.2em;
+    font-size:1em;
+    font-family:'Times New Roman', Times, serif;
     text-align:center;
     color:#ff7f27;
   }
@@ -1265,4 +1284,64 @@
     #votebutton:not(:hover){
         background-color:#82b8ff;
     }
+
+    #risingphoenixbanner{
+      margin-top:20%;
+      height:40%;
+      width:100%;
+      overflow-x:hidden;
+      /*visibility:hidden;*/
+    }
+
+    #firstact{
+      margin-top:40%;
+    }
+    
+    #risingphoenixdesc{
+      position:absolute;
+      width:90%;
+      height:50%;
+      font-size:0.85em;
+      text-align:center;
+      float:none;
+      margin-top:2.5%;
+      margin-left:5%;
+      margin-right:5%;
+    }
+
+    .risingphoenixact{
+      display:block;
+      width:90%;
+      height:fit-content;
+      padding-left:2.5%;
+      padding-right:2.5%;
+      padding-bottom:2.5%;
+      box-sizing:border-box;
+      margin-left:5%;
+      margin-right:5%;
+    }
+    
+    #pageselect{
+      margin-top:15%;
+      position:fixed;
+      width:100%;
+      border-bottom:3px solid #ff7f27;
+    }
+
+    .pagebutton{
+      padding-left:5px;
+      padding-right:5px;
+      width:8%;
+      box-sizing:border-box;
+    }
+
+    .prevbutton, .nextbutton{width:18%;}
+
+    #chaptertitle, #chaptertext, #disclaimer{
+      width:90%;
+      overflow-x:hidden;
+    }
+
+    #chaptertitle{padding-top:0%; font-size:1.8em;}
+    #disclaimer{font-size:0.75em;}
   }

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title> CJ's Creations - About Me </title>
+	<title> CJ's Creations - Games </title>
 	<meta charset="UTF-8">
 	<meta name="author" content="Carlos Jose S. Castillo">
 	<meta name="keywords" content="cj, cjdoesstuff, code, videos, books, comics, games, music">
@@ -10,120 +10,74 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" href="../images/favicon.ico">
 	
-	<style>
-		#red{
-			position:absolute;
-			background-color:red;
-			width:100%;
-			height:50%;
-			opacity:50%;
-		}
-		
-		#pic{
-			position:absolute;
-			float:left;
-			width:100%;
-			height:100%;
-			z-index:2;
-		}
-		
-		#otherpic{
-			position:relative;
-			float:left;
-			width:100%;
-			height:100%;
-			z-index:-999;
-		}
-		
-		#blue{
-			position:absolute;
-			margin-left:50%;
-			width:50%;
-			height:100%;
-			font-size:5em;
-			z-index:3;
-		}
-		
-		#red:hover{
-			animation-name: darkenfeature;
-			animation-duration: 0.5s;
-			animation-fill-mode: forwards;
-		}
-
-		@keyframes darkenfeature {
-			0% {opacity:50%;}
-		  100% {opacity:100%;}
-		}
-		
-		#red:not(:hover){
-			animation-name: lightenfeature;
-			animation-duration: 0.5s;
-			animation-fill-mode: forwards;
-		}
-
-		@keyframes lightenfeature {
-			0% {opacity:100%;}
-		  100% {opacity:50%;}
-		  
-	</style>
+	<link rel="stylesheet" href="../css/cj_css.css" type="text/css">
 </head>
 
-<body>
+<body style="position:relative;">
 
-<!--
-<div>
-	<a href="">
-		<div id="red">
-			<img src="../images/PLACEHOLDERbanner.png" id="pic">
-			<div id="blue">hello</div>
-		</div>
-	</a>
-</div>
-<img src="../images/PLACEHOLDER.png" id="otherpic">
--->
-<p id="demo"></p>
+<div id="blackcurtain"></div>
 
-<div id="featured">
-	<a href="htdocs/story_of_the_month.html">
-		<div id="news">
-			<img src="images/storyofthemonth.png" id="newspic">
-		</div>
-		<p id="votingend"> VOTING ENDS IN </p>
-		<p id="sotmtimer"></p>
-		<div id="entlabel" class="featpic"> STORY OF THE MONTH (AUG 2023) </div>
-	</a>
-</div>
+<!-- HEADER SECTION -->
+<div id="header">
+	<img src="../images/logoblackalt.png" id="logo">
+	<div id="logotext"> <b> CJ'S CREATIONS </b> </div>
+	
+	<div id="headerbuttons">
+	
+  	<a href="music.html"> 
+  		<div class="linkbuttons">
+  			<div class="linknames"> MUSIC </div>
+  			<img src="../images/music.png" class="linkicons">
+  		</div>
+  	</a>
+  	
+  	<a href="videos.html"> 
+  		<div class="linkbuttons">
+  			<div class="linknames"> VIDEOS </div>
+  			<img src="../images/videos.png" class="linkicons">
+  		</div>
+  	</a>
+  	
+  	<a href="comics.html"> 
+  		<div class="linkbuttons">
+  			<div class="linknames"> COMICS </div>
+  			<img src="../images/comics.png" class="linkicons">
+  		</div>
+  	</a>
+  	
+  	<a href="stories.html"> 
+  		<div class="linkbuttons">
+  			<div class="linknames"> STORIES </div>
+  			<img src="../images/storiesandbooks.png" class="linkicons">
+  		</div>
+  	</a>
+  	
+  	<a href="coding_projects.html">
+  		<div class="linkbuttons">	
+  			<div class="linknames"> CODING PROJECTS </div>
+  			<img src="../images/codingprojects.png" class="linkicons">
+  		</div>
+  	</a>
+  	
+  	<a href="../index.html">
+  		<div class="linkbuttons" id="homebutton">	
+  			<div class="linknames" id="homebuttontext"> HOMEPAGE </div>
+  			<img src="../images/homepage.png" class="linkicons">
+  		</div>
+  	</a>
+	
+	</div>
+</div>	
+<!-- END OF HEADER -->
 
-<script>
-// Set the date we're counting down to
-	var countDownDate = new Date("Jul 30, 2023 23:59:00").getTime();
+<div id="marginbl" style="height:10%"></div>
+<img src="images/risingphoenix_images/risingphoenixbanner.png" id="risingphoenixlogo" style="width:100%;" style="overflow:hidden;">
 
-	// Update the count down every 1 second
-	var x = setInterval(function() {
-
-	  // Get today's date and time
-	  var now = new Date().getTime();
-		
-	  // Find the distance between now and the count down date
-	  var distance = countDownDate - now;
-		
-	  // Time calculations for days, hours, minutes and seconds
-	  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-	  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-	  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-	  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-		
-	  // Output the result in an element with id="demo"
-	  document.getElementById("demo").innerHTML = days + "d : " + hours + "hr : "
-	  + minutes + "min : " + seconds + "sec";
-		
-	  // If the count down is over, write some text 
-	  if (distance < 0) {
-		clearInterval(x);
-		document.getElementById("demo").innerHTML = "TIME'S UP!";
-	  }
-	}, 1000);
-</script>
+<a href="risingphoenix/act1/chapter1.html">
+    <div class="risingphoenixact" style="overflow-x:hidden; width:100%; position:relative;">
+        h
+    </div>
+</a>
 
 </body>
 
