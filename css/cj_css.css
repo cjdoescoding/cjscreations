@@ -157,7 +157,8 @@
   
   #newspic{
       width:100%;
-      height:100%;
+      /*height:100%;*/
+      position:relative;
   }
   
   #newstext{
@@ -198,22 +199,20 @@
   }
   
   #entlabel{
-      position:relative;
-      float:left;
-      width:97%;
-      height:fit-content;
-      margin-top:-80px;
-      padding-left:10px;
-      padding-right:10px;
-      padding-top:5px;
-      text-align:center;
-      color:#ff7f27;
-      font-size:50px;
-      font-weight:bold;
-      border:7px solid #ff7f27;
-      background-color:black;
-      white-space:nowrap;
-      overflow:hidden;
+    position:relative;
+    float:left;
+    width:95%;
+    height:fit-content;
+    margin-top:-120px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:5px;
+    text-align:center;
+    color:#ff7f27;
+    font-size:50px;
+    font-weight:bold;
+    border:7px solid #ff7f27;
+    background-color:black;
   }
   
   #entlabel2{
