@@ -767,6 +767,13 @@
     opacity:0.5;
   }
 
+  #tobecontinued{
+    color:#ff7f27;
+    font-family:centurybold;
+    text-align:center;
+    font-size:1.5em;
+  }
+
   #votebutton:hover{
       animation-name: darkenbutton;
       animation-duration: 0.5s;
