@@ -700,7 +700,7 @@
   }
 
   .risingphoenixacttitle{
-    font-size:1.8em;
+    font-size:1.9em;
     font-weight:bold;
     font-family:centurybold;
     padding-bottom:2.5%;
@@ -710,7 +710,7 @@
   }
 
   .risingphoenixactdesc{
-    font-size:1em;
+    font-size:1.1em;
     font-family:'Times New Roman', Times, serif;
     text-align:center;
     color:#ff7f27;
@@ -1055,7 +1055,7 @@
       #entlabel2{
           position:relative;
           float:left;
-          width:91%;
+          width:90%;
           height:23%;
           padding-top:-2px;
           margin-top:-6px;
@@ -1315,10 +1315,11 @@
       height:fit-content;
       padding-left:2.5%;
       padding-right:2.5%;
-      padding-bottom:2.5%;
+      padding-bottom:5%;
       box-sizing:border-box;
       margin-left:5%;
       margin-right:5%;
+      border-top:3px solid #ff7f27;
     }
     
     #pageselect{
