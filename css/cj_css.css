@@ -763,6 +763,8 @@
     padding:5%;
   }
 
+  #chaptertext{color:#ff9954;}
+
   #chaptertitle{font-family:centurybold; font-size:3em; font-weight:bold; text-align:center; margin-bottom:-9%;}
 
   #disclaimer{
@@ -1272,7 +1274,7 @@
       overflow:hidden;
     }
     */
-    
+
     #votebutton{
       margin-top:60%;
       width:60%;
