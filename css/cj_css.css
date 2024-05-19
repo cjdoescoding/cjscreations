@@ -657,6 +657,10 @@
     box-shadow:8px 8px 4px #000000;
   }
 
+  #risingphoenixbody{
+    overflow-y:hidden;
+  }
+
   #risingphoenixbanner{
     margin-top:5%;
     height:10%;
@@ -1302,6 +1306,10 @@
         background-color:#82b8ff;
     }
 
+    #risingphoenixbody{
+      overflow-y:auto;
+    }
+
     #risingphoenixbanner{
       margin-top:20%;
       height:40%;
@@ -1362,6 +1370,7 @@
     }
 
     .prevbutton, .nextbutton{width:18%;}
+    #buttonshort{width:14% !important;}
 
     #chaptertitle, #chaptertext, #disclaimer{
       width:90%;
