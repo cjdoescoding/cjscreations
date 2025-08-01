@@ -8,7 +8,7 @@ export default function Header({back_link}: {back_link: string}) {
             <div className="flex items-center">
               <Link className="flex items-center" href="/">
                 <Image className="w-16 h-16 p-2 float-left" width={300} height={300} src="/images/logo_black.png" alt="C.J.'s Creations"/>
-                <div className="inline-block align-middle leading-none text-3xl text-center font-bold"> C.J.'S CREATIONS </div>
+                <div className="inline-block align-middle leading-none text-3xl text-center font-bold"> C.J.&apos;S CREATIONS </div>
               </Link>
             </div>
             <BackButton back_link={back_link}/>

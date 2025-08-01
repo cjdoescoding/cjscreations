@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Header, {HeaderClearance} from "@/src/components/header";
 import ButtonContainer from "@/src/components/button_container";
 import MediaEntry from "@/src/components/media_entry";

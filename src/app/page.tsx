@@ -1,4 +1,3 @@
-import Link from "next/link";
 import MainMenuButton from "@/src/components/main_menu_button";
 import ButtonContainer from "@/src/components/button_container";
 import Header, {HeaderClearance} from "@/src/components/header";

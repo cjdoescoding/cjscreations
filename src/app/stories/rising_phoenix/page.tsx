@@ -26,8 +26,6 @@ export default function RisingPhoenixChapterSelect() {
     const [selectedActIndex, setSelectedActIndex] = useState(0);
     const [selectedChapterIndex, setSelectedChapterIndex] = useState(0);
 
-    const current_act = selectedActIndex === 0 ? "I" : selectedActIndex === 1 ? "IIA" : selectedActIndex === 2 ? "IIB" : selectedActIndex === 3 ? "III" : ""
-
     // for debug purposes
     // console.log(selectedActIndex)
     // console.log(selectedChapterIndex)
