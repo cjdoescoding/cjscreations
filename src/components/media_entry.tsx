@@ -9,7 +9,7 @@ export default function MediaEntry({type, image, title, genres, description, pag
 
               {/* Story Pic */}
               <div className="w-full md:w-auto h-full flex justify-center p-2">
-                <img src={`/images/${image}.png`} className="w-80 h-auto" alt="Logo"/>
+                <img src={`/cjscreations/images/${image}.png`} className="w-80 h-auto" alt="Logo"/>
               </div>
 
               {/* Description */}
