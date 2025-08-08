@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function MediaEntry({type, image, title, genres, description, page_link}: {type: string, image: string, title: string, genres: string, description: string, page_link: string}){
     return (
         <Link href={page_link}>
-            <div className="flex flex-col md:flex-row w-full bg-black border-7 border-main-yellow mb-5
+            <div className="flex flex-col md:flex-row w-full bg-black border-7 border-main-yellow
                             transition-transform duration-500 ease-in-out hover:scale-105">
 
               {/* Story Pic */}

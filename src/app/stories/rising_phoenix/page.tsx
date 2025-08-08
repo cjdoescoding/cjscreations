@@ -139,6 +139,7 @@ export default function RisingPhoenixChapterSelect() {
                                 chapter_number={selectedChapterIndex + 1} 
                                 prev={true} 
                                 handle_chapter_click={handlePrevClick}
+                                which_story="Rising Phoenix"
                                 />;
                             }
                         })()} 
@@ -154,6 +155,7 @@ export default function RisingPhoenixChapterSelect() {
                                 current_chapter={selectedChapterIndex + 1}
                                 chapter_number={chapterNumber}
                                 handle_chapter_click={setSelectedChapterIndex}
+                                which_story="Rising Phoenix"
                             />
                             );
                         });
@@ -166,6 +168,7 @@ export default function RisingPhoenixChapterSelect() {
                                 chapter_number={selectedChapterIndex + 3} 
                                 next={true} 
                                 handle_chapter_click={handleNextClick}
+                                which_story="Rising Phoenix"
                                 />;
                             }
                         })()} 

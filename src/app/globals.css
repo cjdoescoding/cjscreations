@@ -41,6 +41,11 @@
     src: url(../../public/fonts/times.ttf);
   }
 
+@font-face{
+    font-family: volter;
+    src: url(../../public/fonts/Volter__28Goldfish_29.ttf);
+  }
+
 @theme {
   --color-main-orange: #ff7f27;
   --color-main-yellow: #fed239;
@@ -52,6 +57,12 @@
   --color-blue-fire: #307ad4;
   --color-maroon-fire: #dc1515;
   --color-reading-orange: #ff9954;
+
+  /* Golden Tears Colors */
+  --color-springlock-gold: #d8ad20;
+  --color-hatted-purple: #a643a7;
+  --color-reading-white: #e5e5e5;
+
 }
    
   body, html{

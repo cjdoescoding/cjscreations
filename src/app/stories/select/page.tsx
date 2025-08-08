@@ -12,6 +12,10 @@ export default function StoriesSelect() {
 
         <ButtonContainer>
 
+          {/* Novels */}
+
+          <p className="text-5xl sm:text-5xl text-main-orange font-bold opacity-75"> NOVELS </p>
+
           <MediaEntry 
             type="story" 
             image="rising_phoenix_cover" 
@@ -21,7 +25,22 @@ export default function StoriesSelect() {
             page_link="/stories/rising_phoenix#chapter=1"
           />
 
+          {/* Short Stories */}
+
+          <p className="text-5xl sm:text-5xl text-main-orange font-bold opacity-75 mt-5"> SHORT STORIES </p>
+
+          <MediaEntry 
+            type="story" 
+            image="golden_tears_cover" 
+            title="FIVE NIGHTS AT FREDDY'S: GOLDEN TEARS" 
+            genres="Drama, Horror" 
+            description="Two years after losing their youngest in the Bite of '83, the Afton family remains ravaged by grief and guilt. As they reach their breaking point, the vengeful spirit of Golden Freddy reawakens - eager to hunt them down. Siblings Michael and Elizabeth Afton are forced to go on the run, desperate for safety - and answers." 
+            page_link="/stories/golden_tears#chapter=1"
+          />
+
         </ButtonContainer>
+
+        <HeaderClearance/>
 
         {/* <MoreToCome/> */}
 
