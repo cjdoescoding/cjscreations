@@ -15,7 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "C.J.'s Creations",
   authors: [{ name: "C.J. Castillo" }],
-  keywords: ["rising phoenix", "wrath of the rising phoenix", "cjdoesstuff"],
+  keywords: ["rising phoenix", "wrath of the rising phoenix", "golden tears", "cjdoesstuff"],
+  icons: {
+    icon: "favicon.ico",
+  },
 };
 
 export default function RootLayout({
