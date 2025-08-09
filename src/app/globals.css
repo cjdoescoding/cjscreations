@@ -46,6 +46,11 @@
     src: url(../../public/fonts/Volter__28Goldfish_29.ttf);
   }
 
+@font-face{
+    font-family: pixeloperator;
+    src: url(../../public/fonts/PixelOperator.ttf);
+  }
+
 @theme {
   --color-main-orange: #ff7f27;
   --color-main-yellow: #fed239;

@@ -5,9 +5,9 @@ import Header, {HeaderClearance} from "@/src/components/header";
 export default function Home() {
   
   const featured = {
-    name: "WRATH OF THE RISING PHOENIX: A PISAY STORY",
-    img_name: "rising_phoenix_main_button",
-    page_link: "/stories/rising_phoenix#chapter=1"
+    name: "FIVE NIGHTS AT FREDDY'S: GOLDEN TEARS",
+    img_name: "golden_tears_keyart",
+    page_link: "/stories/golden_tears/#chapter=1"
   }
 
   return (
@@ -27,7 +27,7 @@ export default function Home() {
         <div className="w-full h-0 border-solid border-t-7 border-main-orange"></div>
 
         {/* CURRENT WORKS */}
-        <MainMenuButton button_image="rising_phoenix_logo_empty" button_text="STORIES" page_link="/stories/select"/>
+        <MainMenuButton button_image="stories_icon" button_text="STORIES" page_link="/stories/select"/>
         <MainMenuButton button_image="music_preview" button_text="MUSIC (COMING SOON)" page_link=""/>
         <MainMenuButton button_image="mrhappy_logo" button_text="GAMES" page_link="/games/select"/>
 

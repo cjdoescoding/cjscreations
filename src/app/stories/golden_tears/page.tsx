@@ -1,9 +1,9 @@
 "use client";
 
 import Header, {HeaderClearanceChapter} from "@/src/components/header";
-import ActButton from "@/src/components/chapter_select/act_button";
 import ChapterButton from "@/src/components/chapter_select/chapter_button";
 import GoldenTearsChapters from "@/src/app/stories/golden_tears/golden_tears_chapters.json";
+import Head from "next/head"
 
 import {useState, useEffect} from 'react';
 
@@ -63,81 +63,91 @@ export default function GoldenTearsChapterSelect() {
     
     // display screen
   return (
-    <main>
+    <>
+        <Head>
+            <meta property="og:title" content="Five Nights at Freddy's: Golden Tears" />
+            <meta property="og:description" content="Two years after losing their youngest in the Bite of '83, the Afton family remains ravaged by grief and guilt. As they reach their breaking point, the vengeful spirit of Golden Freddy reawakens - eager to hunt them down. Siblings Michael and Elizabeth Afton are forced to go on the run, desperate for safety - and answers." />
+            <meta property="og:image" content="https://cjdoescoding.github.io/cjscreations/images/golden_tears_keyart.png" />
+            <meta property="og:url" content="https://cjdoescoding.github.io/cjscreations/stories/golden_tears/#chapter=1" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <title>Five Nights at Freddy&apos;s: Golden Tears</title>
+        </Head>
+        <main>
 
-        <Header back_link="/cjscreations/stories/select"/>
+            <Header back_link="/cjscreations/stories/select"/>
 
-        <HeaderClearanceChapter/>
+            <HeaderClearanceChapter/>
 
-        <div className="fixed flex-row bg-black font-[volter] mt-[-1] w-full">
-            <div className="bg-springlock-gold w-auto h-auto text-xl text-center font-bold leading-5 tracking-widest border-black border-t-5 p-0.5 mb-1"> Five Nights at Freddy's: Golden Tears </div>
+            <div className="fixed flex-row bg-black font-[volter] mt-[-1] w-full">
+                <div className="bg-springlock-gold w-auto h-auto text-xl text-center font-bold leading-5 tracking-widest border-black border-t-5 p-0.5 mb-1"> Five Nights at Freddy&apos;s: Golden Tears </div>
 
-            <div className="fixed flex w-full h-auto text-xl border-hatted-purple border-t-5 border-b-5">
+                <div className="fixed flex w-full h-auto text-xl border-hatted-purple border-t-5 border-b-5">
 
-                {/* Chapter Select */}
-                <div className="flex-grow justify-center overflow-y-auto bg-black">
+                    {/* Chapter Select */}
+                    <div className="flex-grow justify-center overflow-y-auto bg-black">
 
-                    <div className="flex flex-wrap justify-center">
+                        <div className="flex flex-wrap justify-center">
 
-                        {/* Prev Button */}
-                        {(() => {
-                            if (selectedChapterIndex !== 0) {
-                                return <ChapterButton 
-                                chapter_number={selectedChapterIndex + 1} 
-                                prev={true} 
-                                handle_chapter_click={handlePrevClick}
-                                which_story="Golden Tears"
-                                />;
-                            }
-                        })()} 
+                            {/* Prev Button */}
+                            {(() => {
+                                if (selectedChapterIndex !== 0) {
+                                    return <ChapterButton 
+                                    chapter_number={selectedChapterIndex + 1} 
+                                    prev={true} 
+                                    handle_chapter_click={handlePrevClick}
+                                    which_story="Golden Tears"
+                                    />;
+                                }
+                            })()} 
 
-                        {/* Chapter Buttons */}
-                        {(() => {
-                        return Array.from({ length: 13 }, (_, i) => {
-                            const chapterNumber = i + 1;
-                            return (
-                            <ChapterButton
-                                key={chapterNumber}
-                                current_chapter={selectedChapterIndex + 1}
-                                chapter_number={chapterNumber}
-                                handle_chapter_click={setSelectedChapterIndex}
-                                which_story="Golden Tears"
-                            />
-                            );
-                        });
-                        })()}
+                            {/* Chapter Buttons */}
+                            {(() => {
+                            return Array.from({ length: 13 }, (_, i) => {
+                                const chapterNumber = i + 1;
+                                return (
+                                <ChapterButton
+                                    key={chapterNumber}
+                                    current_chapter={selectedChapterIndex + 1}
+                                    chapter_number={chapterNumber}
+                                    handle_chapter_click={setSelectedChapterIndex}
+                                    which_story="Golden Tears"
+                                />
+                                );
+                            });
+                            })()}
 
-                        {/* Next Button */}
-                        {(() => {
-                            if (selectedChapterIndex !== 12) {
-                                return <ChapterButton 
-                                chapter_number={selectedChapterIndex + 3} 
-                                next={true} 
-                                handle_chapter_click={handleNextClick}
-                                which_story="Golden Tears"
-                                />;
-                            }
-                        })()} 
+                            {/* Next Button */}
+                            {(() => {
+                                if (selectedChapterIndex !== 12) {
+                                    return <ChapterButton 
+                                    chapter_number={selectedChapterIndex + 3} 
+                                    next={true} 
+                                    handle_chapter_click={handleNextClick}
+                                    which_story="Golden Tears"
+                                    />;
+                                }
+                            })()} 
 
+                        </div>
                     </div>
+
                 </div>
 
             </div>
 
-        </div>
+            <div className="font-[volter] w-full text-reading-white text-center font-bold
+                            text-3xl sm:text-5xl pl-5 pr-5 mt-45 sm:mt-30 mb-10"> {`Chapter ${selectedChapterIndex + 1}: ${chapters[selectedChapterIndex]?.title ?? "Invalid Chapter"}`} </div>
 
-        <div className="font-[volter] w-full text-reading-white text-center font-bold
-                        text-3xl sm:text-5xl pl-5 pr-5 mt-45 sm:mt-30 mb-10"> {`Chapter ${selectedChapterIndex + 1}: ${chapters[selectedChapterIndex]?.title ?? "Invalid Chapter"}`} </div>
+            
 
-        
-
-        <div className="font-[volter] pl-5 pr-5 sm:pl-20 sm:pr-20 w-full text-reading-white text-lg leading-6 mt-10 whitespace-pre-line"> 
-            {chapters[selectedChapterIndex]?.content ?? "This is not a valid chapter.".split('\n').map((line: string, i: number) => (
-                <p key={i}>{line}</p>
-            ))}
-        </div>
+            <div className="font-[pixeloperator] pl-5 pr-5 sm:pl-20 sm:pr-20 w-full text-reading-white text-2xl leading-6 mt-10 whitespace-pre-line"> 
+                {chapters[selectedChapterIndex]?.content ?? "This is not a valid chapter.".split('\n').map((line: string, i: number) => (
+                    <p key={i}>{line}</p>
+                ))}
+            </div>
 
 
-    </main>
+        </main>
+    </>
   )
 }
