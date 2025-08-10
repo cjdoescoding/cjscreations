@@ -24,14 +24,17 @@ export default function Home() {
         <MainMenuButton button_image={featured.img_name} button_text={featured.name} page_link={featured.page_link}/>
 
         {/* SEPARATOR */}
-        <div className="w-full h-0 border-solid border-t-7 border-main-orange"></div>
+        <div className="w-full h-0 border-solid border-t-7 border-main-orange opacity-60"></div>
 
         {/* CURRENT WORKS */}
         <MainMenuButton button_image="stories_icon" button_text="STORIES" page_link="/stories/select"/>
         <MainMenuButton button_image="music_preview" button_text="MUSIC (COMING SOON)" page_link=""/>
-        <MainMenuButton button_image="mrhappy_logo" button_text="GAMES" page_link="/games/select"/>
+        <MainMenuButton button_image="games_icon" button_text="GAMES" page_link="/games/select"/>
 
-        {/* ARCHIVED - ADD LATER */}
+        {/* <div className="w-full h-0 border-solid border-t-7 border-main-orange opacity-60"></div>
+
+        <MainMenuButton button_image="PLACEHOLDER" button_text="VIDEOS" page_link="https://www.youtube.com/@cj-doesstuff"/>
+        <MainMenuButton button_image="PLACEHOLDER" button_text="ARCHIVES" page_link=""/> */}
 
       </ButtonContainer>
 
