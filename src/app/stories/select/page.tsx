@@ -21,6 +21,7 @@ export default function StoriesSelect() {
             image="rising_phoenix_cover" 
             title="WRATH OF THE RISING PHOENIX: A PISAY STORY" 
             genres="Action, Thriller, Mystery, Drama" 
+            reading_time="~5 hours"
             description="Four students team up to unravel the sinister plans of a shadow organization deep within Philippine Science High School. Witness a slew of bombastic action and spy thrills unfold on the page as our heroes learn what it truly means to be an iskolar ng bayan." 
             page_link="/stories/rising_phoenix#chapter=1"
           />
@@ -34,6 +35,7 @@ export default function StoriesSelect() {
             image="golden_tears_cover" 
             title="FIVE NIGHTS AT FREDDY'S: GOLDEN TEARS" 
             genres="Drama, Horror" 
+            reading_time="~1.5 hours"
             description="Two years after losing their youngest in the Bite of '83, the Afton family remains ravaged by grief and guilt. As they reach their breaking point, the vengeful spirit of Golden Freddy reawakens - eager to hunt them down. Siblings Michael and Elizabeth Afton are forced to go on the run, desperate for safety - and answers." 
             page_link="/stories/golden_tears#chapter=1"
           />
