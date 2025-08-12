@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function MediaEntry({type, image, title, genres, description, page_link, reading_time = ""}: {type: string, image: string, title: string, genres: string, description: string, page_link: string, reading_time?: string}){
+export default function MediaEntry({type, image, title, genres, description, page_link, total_time = ""}: {type: string, image: string, title: string, genres: string, description?: string, page_link: string, total_time?: string}){
     return (
         <Link href={page_link}>
             <div className="flex flex-col md:flex-row w-full bg-black border-7 border-main-yellow
@@ -22,9 +22,21 @@ export default function MediaEntry({type, image, title, genres, description, pag
                 </p>
                 
                 {(() => {
-                  if (reading_time !== "") {
+                  if (total_time !== "") {
                     return (<p className="text-lg text-main-orange mt-2 leading-5">  
-                       <b> Reading Time: </b> {`${reading_time}`}
+                        {(() => {
+                          if (type === "story") {
+                          return <b> Reading Time: </b>;
+                          } else if (type === "music") {
+                          return <b> Duration: </b>;
+                          } else if (type === "game") {
+                          return <b> Playtime: </b>;
+                          } else {
+                          return <b> Time: </b>;
+                          }
+                        })()}
+                       
+                       {`${total_time}`}
                         </p>
                       )
                   }

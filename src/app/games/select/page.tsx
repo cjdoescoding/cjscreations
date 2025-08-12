@@ -17,7 +17,8 @@ export default function GamesSelect() {
             image="mrhappy_logo" 
             title="MR. HAPPY" 
             genres="Narrative, Choose-Your-Own-Adventure, Terminal-Based" 
-            description="You play as a tester for a new and advanced digital assistant named 'Mr. Happy'.  As you continue testing, you realize that there's a lot more to this happy program than meets the eye. (NOTE: This game is 4 years old. Please lower your expectations.)" 
+            total_time="~5 minutes one route, ~30 minutes all routes"
+            description="You play as a tester for a new and advanced digital assistant named 'Mr. Happy'.  As you continue testing, you realize that there's a lot more to this happy program than meets the eye. (NOTE: This game is more than 4 years old and is fairly buggy. Please lower your expectations.)" 
             page_link="https://cjcreativemedia.itch.io/mr-happy"
           />
 
